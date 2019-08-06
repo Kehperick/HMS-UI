@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="654.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.system.Book.BookSceneController">
+   <children>
+      <VBox layoutX="93.0" layoutY="81.0" prefHeight="654.0" prefWidth="1000.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow color="#aba9a9" height="10.0" offsetY="2.0" radius="2.0" width="0.0" />
+               </effect>
+               <children>
+                  <Label layoutX="48.0" layoutY="14.0" text="Choose your room category" textFill="#ef6c00">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="542.0" layoutY="4.0" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #ef6c00;" text="5 star" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="689.0" layoutY="4.0" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #ef6c00;" text="3 star" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="836.0" layoutY="4.0" prefHeight="42.0" prefWidth="146.0" style="-fx-background-color: #ef6c00;" text="2 star" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <FlowPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <JFXTreeTableView fx:id="table" prefHeight="601.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../homepage.css" />
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

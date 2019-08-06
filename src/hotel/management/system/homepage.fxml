@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="1296.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.management.system.HomepageController">
+   <children>
+      <Pane prefHeight="59.0" prefWidth="1296.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#979494" height="16.0" offsetY="1.0" radius="3.5" width="0.0" />
+         </effect>
+         <children>
+            <Label layoutX="88.0" layoutY="18.0" prefHeight="23.0" prefWidth="222.0" text="Hotel Management System" textFill="#e65100">
+               <font>
+                  <Font name="Century Gothic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="47.0" layoutX="27.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo%20small.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <HBox prefHeight="654.0" prefWidth="1296.0" style="-fx-background-color: white;">
+         <VBox.margin>
+            <Insets top="3.0" />
+         </VBox.margin>
+         <children>
+            <VBox prefHeight="654.0" prefWidth="300.0" style="-fx-background-color: white;">
+               <effect>
+                  <DropShadow color="#bcb9b9" height="0.0" offsetX="1.0" radius="1.5" width="8.0" />
+               </effect>
+               <children>
+                  <Pane prefHeight="223.0" prefWidth="300.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="182.0" fitWidth="222.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true" rotate="-1.0">
+                           <image>
+                              <Image url="@images/logo.PNG" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="60.0" prefWidth="302.0">
+                     <children>
+                        <Label layoutX="126.0" layoutY="21.0" text="Actions">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="bookRoomBtn" layoutX="10.0" layoutY="233.0" onAction="#openBookScene" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="Book A Room" textFill="#868585">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="passClient" layoutX="10.0" layoutY="287.0" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="Past Clients" textFill="#868585">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane prefHeight="58.0" prefWidth="302.0">
+                     <children>
+                        <JFXButton fx:id="notificationBtn" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="Notifications" textFill="#868585">
+                           <font>
+                              <Font name="Century Gothic Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label alignment="CENTER" layoutX="197.0" layoutY="2.0" mouseTransparent="true" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: red; -fx-background-radius: 20; -fx-border-radius: 20;" text="4" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="historyBtn" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="History" textFill="#868585">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="helpBtn" layoutX="10.0" layoutY="453.0" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="Help content" textFill="#868585">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="aboutBtn" layoutX="10.0" layoutY="507.0" prefHeight="54.0" prefWidth="302.0" style="-fx-background-color: white;" text="About" textFill="#868585">
+                     <font>
+                        <Font name="Century Gothic Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="rghtAnchorpane" prefHeight="654.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <children>
+                  <AnchorPane layoutX="33.0" layoutY="14.0" prefHeight="564.0" prefWidth="406.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow color="#c3c3c3" height="15.0" offsetY="2.0" radius="7.0" width="15.0" />
+                     </effect>
+                     <children>
+                        <JFXTextField fx:id="namefield" focusColor="#ef6c00" labelFloat="true" layoutX="40.0" layoutY="83.0" prefHeight="35.0" prefWidth="326.0" promptText="client's name">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label alignment="CENTER" prefHeight="54.0" prefWidth="406.0" style="-fx-background-color: #ef6c00;" text="BOOK IN A NEW CLIENT" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="ageField" focusColor="#ef6c00" labelFloat="true" layoutX="40.0" layoutY="149.0" prefHeight="35.0" prefWidth="326.0" promptText="client's age">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="idField" focusColor="#ef6c00" labelFloat="true" layoutX="40.0" layoutY="229.0" prefHeight="35.0" prefWidth="326.0" promptText="client's identity number">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXDatePicker fx:id="arrivalDateField" defaultColor="#ef6c00" layoutX="40.0" layoutY="309.0" prefHeight="28.0" prefWidth="141.0" promptText="arrival date" style="-fx-font-family: &quot;century gothic&quot;;" />
+                        <JFXDatePicker fx:id="offDateField" defaultColor="#ef6c00" layoutX="209.0" layoutY="309.0" prefHeight="28.0" prefWidth="141.0" promptText="off date" style="-fx-font-family: &quot;century gothic&quot;;" />
+                        <Label layoutX="167.0" layoutY="359.0" text="duration">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="roomCountField" focusColor="#ef6c00" labelFloat="true" layoutX="46.0" layoutY="423.0" prefHeight="35.0" prefWidth="326.0" promptText="rooms needed" text="1">
+                           <font>
+                              <Font name="Century Gothic" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="pendBtn" buttonType="RAISED" layoutX="46.0" layoutY="500.0" onAction="#pendAction" prefHeight="54.0" prefWidth="326.0" style="-fx-background-color: #ef6c00;" text="PEND" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="493.0" layoutY="56.0" prefHeight="165.0" prefWidth="477.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="24.0" layoutY="21.0" prefHeight="35.0" prefWidth="62.0" text="5 star ">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="255.0" layoutY="21.0" prefHeight="35.0" prefWidth="160.0" text="10,000 FCFA">
+                           <font>
+                              <Font name="Roboto Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="to5Star" buttonType="RAISED" layoutX="329.0" layoutY="111.0" onAction="#goto5StarScene" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: white;" text="Choose" textFill="#0b68ff">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="24.0" layoutY="56.0" prefHeight="35.0" prefWidth="160.0" text="Special Features">
+                           <font>
+                              <Font name="Roboto Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="86.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="111.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="136.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="161.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="186.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="24.0" layoutY="91.0" prefHeight="20.0" prefWidth="160.0" text="A Bed and Couch">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="24.0" layoutY="111.0" prefHeight="20.0" prefWidth="173.0" text="Fridge and air conditioner">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="131.0" prefHeight="20.0" prefWidth="173.0" text="Smart TV, Ocean View">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow color="#b9b7b7" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="493.0" layoutY="245.0" prefHeight="165.0" prefWidth="477.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="24.0" layoutY="21.0" prefHeight="35.0" prefWidth="62.0" text="3 star ">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="255.0" layoutY="21.0" prefHeight="35.0" prefWidth="160.0" text="7,500 FCFA">
+                           <font>
+                              <Font name="Roboto Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="to3Star" buttonType="RAISED" layoutX="329.0" layoutY="111.0" onAction="#goto3StarScene" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: white;" text="Choose" textFill="#0b68ff">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="24.0" layoutY="56.0" prefHeight="35.0" prefWidth="160.0" text="Special Features">
+                           <font>
+                              <Font name="Roboto Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="86.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="111.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="136.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="91.0" prefHeight="20.0" prefWidth="104.0" text="Bed">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="111.0" prefHeight="20.0" prefWidth="160.0" text="Fridge, ventilation">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow color="#b9b7b7" />
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="493.0" layoutY="430.0" prefHeight="165.0" prefWidth="477.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="24.0" layoutY="21.0" prefHeight="35.0" prefWidth="62.0" text="2 star ">
+                           <font>
+                              <Font name="Century Gothic" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="255.0" layoutY="21.0" prefHeight="35.0" prefWidth="160.0" text="2,500 FCFA">
+                           <font>
+                              <Font name="Roboto Regular" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="to2Star" buttonType="RAISED" layoutX="329.0" layoutY="111.0" onAction="#goto2StarScene" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: white;" text="Choose" textFill="#0b68ff">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="24.0" layoutY="56.0" prefHeight="35.0" prefWidth="160.0" text="Special Features">
+                           <font>
+                              <Font name="Roboto Regular" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="86.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="25.0" layoutX="111.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/star.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow color="#b9b7b7" />
+                     </effect>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>
